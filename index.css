@@ -5,8 +5,7 @@
 
 }
 body{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLrXLrAQ5XqctG-PqV4lWLu2lsAVuaEWc7Mw&s');
-    background-size: cover;
+    background-image: url('');
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -124,13 +123,15 @@ header{
 }
 .projects{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
 
 }
 .projects line{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 50%;
     height: 100%;
     gap: 20px;
@@ -144,21 +145,22 @@ header{
 
 
 .projectscontaint {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px; /* Space between cards */
-    padding: 40px;
+    padding: 20px;
     justify-items: center;
   }
 
   .project-card {
-    perspective: 1000px;
+    perspective: 800px;
     display: inline-block;
   }
 
   .flip-card {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
   }
 
@@ -199,12 +201,45 @@ header{
   }
 
   .back {
-    background-color: #4CAF50;
+    background:linear-gradient(#eebee7, #eef60a);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
     transform: rotateY(180deg);
+    padding: 5px;
   }
+
 
   /* Remove underline from links */
   .project-link {
     text-decoration: none;
 }
+
+.line-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress {
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 5px 0 0 5px;
+  }
+  
